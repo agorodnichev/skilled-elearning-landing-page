@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="<%= require('./assets/favicon-32x32.png') %>">
+  
+  <title>Frontend Mentor | Skilled e-learning landing page</title>
+</head>
+<body class="layout">
+    <header class="header header--layout">
+      <img src="<%= require('./assets/logo-dark.svg') %>" alt="logo" class="logo">
+      <button class="get-started-button get-started-button--dark">Get Started</button>
+    </header>
+    
+    <div class="ad-content">
+      <aside class="info">
+        <h1 class="info__title">Maximize skill, minimize budget</h1>
+        <p class="info__text">Our modern courses across a range of in&#8209;demand skills will give you the knowledge you need to live the life you want.</p>
+        <button class="get-started-button get-started-button--pink-light">Get Started</button>
+      </aside>
+      <picture>
+        <source media="(min-width: 75em)" srcset="<%= require('./assets/image-hero-desktop.webp') %>, <%= require('./assets/image-hero-desktop@2x.webp') %> 2x" type="image/webp">
+        <source media="(min-width: 75em)" srcset="<%= require('./assets/image-hero-desktop.png') %>, <%= require('./assets/image-hero-desktop@2x.png') %> 2x" type="image/png">
+        <source media="(min-width: 45em)" srcset="<%= require('./assets/image-hero-tablet.webp') %>, <%= require('./assets/image-hero-tablet@2x.webp') %> 2x" type="image/webp">
+        <source media="(min-width: 45em)" srcset="<%= require('./assets/image-hero-tablet.png') %>, <%= require('./assets/image-hero-tablet@2x.png') %> 2x" type="image/png">
+        <source srcset="<%= require('./assets/image-hero-mobile.webp') %>, <%= require('./assets/image-hero-mobile@2x.webp') %> 2x" type="image/webp">
+        <source srcset="<%= require('./assets/image-hero-mobile.png') %>, <%= require('./assets/image-hero-mobile@2x.png') %> 2x" type="image/png">
+        <img src="<%= require('./assets/image-hero-mobile.png') %>" alt="" class="image">
+      </picture>
+    </div>
+    <main class="main-section">
+      <div class="cards">
+        <!-- 1 -->
+        <div class="main-card card">
+          <h3 class="main-card__text">Check out our most popular courses!</h3>
+        </div>
+        <!-- 2 -->
+        <div class="card">
+            <img class="card__icon" src="<%= require('./assets/icon-animation.svg') %>" alt="">
+            <div>
+              <h3 class="card__title">Animation</h3>
+              <p class="card__text">Learn the latest animation techniques to create stunning motion design and captivate your audience.</p>
+              <a class="card__link" href="http://" target="_blank" rel="noopener noreferrer">Get Started</a>
+            </div>
+        </div>
+        <!-- 3 -->
+        <div class="card">
+            <img class="card__icon" src="<%= require('./assets/icon-design.svg') %>" alt="">
+            <div>
+              <h3 class="card__title">Design</h3>
+              <p class="card__text">Create beautiful, usable interfaces to help shape the future of how the web looks.</p>
+              <a class="card__link" href="http://" target="_blank" rel="noopener noreferrer">Get Started</a>
+            </div>
+        </div>
+        <!-- 4 -->
+        <div class="card">
+            <img class="card__icon" src="<%= require('./assets/icon-photography.svg') %>" alt="">
+            <div>
+              <h3 class="card__title">Photography</h3>
+              <p class="card__text">Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.</p>
+              <a class="card__link" href="http://" target="_blank" rel="noopener noreferrer">Get Started</a>
+            </div>
+        </div>
+        <!-- 5 -->
+        <div class="card">
+            <img class="card__icon" src="<%= require('./assets/icon-crypto.svg') %>" alt="">
+            <div>
+              <h3 class="card__title">Crypto</h3>
+              <p class="card__text">All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course.</p>
+              <a class="card__link" href="http://" target="_blank" rel="noopener noreferrer">Get Started</a>
+            </div>
+        </div>
+        <!-- 6 -->
+        <div class="card">
+            <img class="card__icon" src="<%= require('./assets/icon-business.svg') %>" alt="">
+            <div>
+              <h3 class="card__title">Business</h3>
+              <p class="card__text">A step-by-step playbook to help you start, scale, and sustain your business without outside investment.</p>
+              <a class="card__link" href="http://" target="_blank" rel="noopener noreferrer">Get Started</a>
+            </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <img src="<%= require('./assets/logo-light.svg') %>" alt="logo" class="logo">
+      <button class="get-started-button get-started-button--pink-dark">Get Started</button>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,83 @@
+// Colors
+$colorBlue: #666CA3;
+$colorDark: #13183F;
+$colorGrey: #83869A;
+$colorDarkPink: #F74780;
+$colorPink: #FFA7C3;
+$colorWhite: #FFFFFF;
+$gradientLightStart: #FF6F48;
+$gradientLightStop: #F02AA6;
+$gradientDarkStart: #4851FF;
+$gradientDarkStop: #F02AA6;
+
+$backgroundColor: #F0F1FF;
+
+// Fonts
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 500 800;
+  font-display: swap;
+  src: url('../assets/fonts/plusjakartasans_normal.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@mixin mediumJakarta500 {
+  font-weight: 500;
+}
+
+@mixin boldJakarta700 {
+  font-weight: 700;
+}
+
+@mixin extraBoldJakarta800 {
+  font-weight: 800;
+}
+
+// Typography sizing
+// -- Headings
+@mixin headingXL {
+  font-size: 56px;
+  line-height: 70px;
+}
+
+@mixin headingL {
+  font-size: 40px;
+  line-height: 51px;
+}
+
+@mixin headingM {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+@mixin headingS {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+@mixin headingXS {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+// -- Body
+@mixin bodyM {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+@mixin bodyS {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+// Layouts sizing
+$desktop-layout-space: 10.3125rem;
+$tablet-layout-space: 2.5rem;
+$mobile-layout-space: 1em;
+
+// Breakpoints
+
+$medium-devices-breakpoint: 45em;
+$large-devices-breakpoint: 75em;
